@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #555;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#listaPersonagens, #listaFavoritos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item-personagem {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.item-personagem:hover {
+    transform: scale(1.05);
+}
+
+.item-personagem img {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.botao-favorito {
+    margin-top: 10px;
+    background-color: #28a745;
+}
+
+.botao-favorito:hover {
+    background-color: #218838;
+}
